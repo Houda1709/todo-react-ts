@@ -1,32 +1,48 @@
-# React + TypeScript + Vite
+# 📝 To-Do List : React 19 + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Application de gestion de tâches construite pour apprendre React et TypeScript.
 
-Currently, two official plugins are available:
+## ✨ Fonctionnalités
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Ajouter, cocher et supprimer des tâches
+- Filtres : toutes / en cours / terminées
+- Barre de progression
+- Sauvegarde automatique dans le navigateur (localStorage)
+- Mode sombre automatique selon le système
+- Interface responsive
 
-## React Compiler
+## 🛠️ Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- TypeScript
+- Vite
+- CSS moderne (nesting, `:has()`, `light-dark()`, `oklch()`)
 
-## Expanding the Oxlint configuration
+## 🚀 Lancer le projet
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+git clone https://github.com/Houda1709/todo-react-ts.git
+cd todo-react-ts
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+L'application est disponible sur http://localhost:5173
+
+## 📚 Ce que j'ai appris
+
+- Composants, props, état (`useState`) et effets (`useEffect`)
+- Formulaires avec les Actions de React 19
+- Typage avec TypeScript
+- Valeurs dérivées plutôt que états redondants
+
+## 🔜 Prochaines étapes
+
+- [ ] API Laravel (CRUD) avec base de données
+- [ ] Authentification (Laravel Sanctum)
+- [ ] Validation des données avec Zod
+- [ ] Tests automatisés
+
+## 👤 Auteur
+
+**Houda** : [LinkedIn](https://www.linkedin.com/in/houda-hasnaoui-1944233a0/) 
